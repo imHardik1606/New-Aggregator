@@ -1,33 +1,79 @@
-# News Aggregator
+# News Aggregator (MERN Stack)
 
-This is a news aggregator project built using the MERN stack (MongoDB, Express, React, Node.js) and the NewsAPI.org API. The project allows users to view news articles from various sources.
+## 📌 Overview
+News Aggregator is a full-stack web application built using the **MERN stack (MongoDB, Express.js, React.js, and Node.js)**. It fetches the latest news from **NewsAPI** and displays it in an interactive UI. Users can browse news by categories, search for specific topics, and even save their favorite articles.
 
-## Getting Started
+## 🚀 Features
+- Fetch and display news articles from **NewsAPI**
+- Category-based news filtering (e.g., Business, Technology, Sports, etc.)
+- Search functionality to find specific news
+<!-- - User authentication (Sign up/Login using JWT) -->
+- Save favorite articles for later reading
+- Responsive UI built with React and Tailwind CSS
 
-These instructions will help you set up the project on your local machine for development and testing purposes.
+## 🛠️ Tech Stack
+### Frontend:
+- React.js
+- Redux (for state management)
+- Axios (for API requests)
+- Tailwind CSS (for styling)
 
-### Prerequisites
+### Backend:
+- Node.js
+- Express.js
+<!-- - MongoDB with Mongoose (for database management)
+- JWT (for authentication)
+- bcrypt (for password hashing) -->
 
-- Node.js and npm installed on your machine
-- A NewsAPI.org API key
+## 🔧 Installation and Setup
 
-### Installation
+### 1️⃣ Clone the Repository
+```sh
+ git clone https://github.com/your-username/news-aggregator.git
+ cd news-aggregator
+```
 
-1. Fork the repository on GitHub.
-2. Clone the repository to your local machine.
-3. Navigate to the server directory and create a new file named `.env`.
-4. Add your NewsAPI.org API key to the `.env` file in the following format: `API_KEY=your_news_api_key`.
-5. In the server directory, run `npm install` to install the necessary dependencies.
-6. Start the server by running `node server.js`.
-7. Navigate to the client directory and run `npm install` to install the necessary dependencies.
-8. Start the client by running `npm run dev`.
+### 2️⃣ Backend Setup
+```sh
+ cd server
+ npm install
+```
+#### Create a `.env` file inside `server` directory and add:
+```
+PORT=5000
 
-## Usage
+API_KEY=your_newsapi_key
+```
 
-Once the project is set up and running, you can view news articles from various sources on the client side.
+#### Start Backend Server
+```sh
+ nodemon server.js
+```
 
-## Contributing
+### 3️⃣ Frontend Setup
+```sh
+ cd ../client
+ npm install
+```
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+#### Start React App
+```sh
+ npm run dev
+```
 
-Please make sure to update tests as appropriate.
+## 📡 API Usage
+To use **NewsAPI**, sign up at [NewsAPI.org](https://newsapi.org/) and get an API key. Then, update your `.env` file with `API_KEY`.
+
+## 📷 Screenshots
+(Add screenshots of your application here)
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to open an issue or create a pull request.
+
+## 📜 License
+This project is licensed under the MIT License.
+
+---
+
+🚀 **Happy Coding!** 🎉
+
